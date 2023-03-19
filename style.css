@@ -1,0 +1,7 @@
+:root{
+    --purple: #8E82C9;
+}
+
+header{
+    background-color: var(--purple)
+}
