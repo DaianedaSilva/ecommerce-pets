@@ -73,10 +73,12 @@ main {
 .price {
     color: var(--font-primary);
     font-weight: 800;
+    display: flex;
     font-size: 18px;
+    gap: 5px;
 }
 
-.price::first-letter {
+.price p:nth-child(1) {
     font-weight: 700;
 }
 
