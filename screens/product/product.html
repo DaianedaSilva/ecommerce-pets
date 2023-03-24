@@ -11,9 +11,9 @@
 </head>
 <body>
     <header class="header">
-        <i class="fa-solid fa-chevron-left"></i>
+        <i class="header-icon fa-solid fa-chevron-left"></i>
         <p class="header-title">Adult Organic Chicken<br>Bake with Vegetable</p>
-        <i class="fa-solid fa-upload"></i>
+        <i class="header-icon fa-solid fa-arrow-up-from-bracket"></i>
     </header>
 
     <main>
@@ -28,12 +28,12 @@
                     <img class="product-info-review-stars" src="../../src/starts.png">
                     <p class="product-info-review-quantity">23 reviews</p>
                 </div>
-                <p class="product-info-price">$ 16.00</p>
+                <p class="product-info-price price">$ 16.00</p>
                 <div class="product-info-quantity">
                     <p class="product-info-quantity-title">Quantity</p>
                     <div class="product-info-quantity-buttons">
                         <button>-</button>
-                        <p>2</p>
+                        <p id="product-quantity">2</p>
                         <button>+</button>
                     </div>
 
@@ -43,19 +43,29 @@
         </div>
 
         <div class="more-information">
-            <ul class="more-information-tabs">
-                <li>Details</li>
-                <li>Reviews (23)</li>
-                <li>FAQ</li>
-                <li>Instructions</li>
+            <ul class="more-information-tab">
+                <li class="more-information-tab-item tab-item-active">Details</li>
+                <li class="more-information-tab-item ">Reviews (23)</li>
+                <li class="more-information-tab-item">FAQ</li>
+                <li class="more-information-tab-item">Instructions</li>
             </ul>
+            <article class="more-information-content">
+                Like all our dry food, this grain free, delicious and comlete recipe  with fresh chicken and freshly prepared duck, is bursting with natural goodness.
+                <br> <br>
+                We add glucosamine and chondroitin to help aid bone and joint support, prebiotics to help establish a healthy digestion and essential nutrients for overall health. It also contains salmon oil, a fantastic source of Omega-3 fatty acids to help keep your dog’s coat, heart, brain and joints in good health.
+                <br> <br>
+                We make this recipe using wholesome vegetables, fruits and botanical herbs. All the essential vitamins and minerals your dog needs in their daily diet have also been added.
+            </article>
         </div>
 
     </main>
 
     <footer class="footer">
-        <p>$ 32,00</p>
-        <button>Add to card +</button>
+        <p class="footer-price price">$ 32,00</p>
+        <button class="footer-button">
+            <p>Add to card</p>
+            <p>+</p>
+        </button>
     </footer>
     
 </body>
