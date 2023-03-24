@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;800;900;1000&display=swap');
 
 :root{
     --purple: #8E82C9;
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
+    font-family: 'Nunito', sans-serif;
     flex-direction: column;
+    display: flex;
     gap: 10px;
 }
 
@@ -33,12 +33,13 @@ header{
 .header-title h1{
     color: white;
     font-weight: 900;
+    text-align: center;
+    width: 90%;
 }
 
 .header-title img {
     width: 25px;
-    position: fixed;
-    left: 85%;
+
 }
 
 .header-search{
@@ -51,7 +52,6 @@ header{
     border-radius: 15px;
     gap: 16px;
     padding: 2px;
-
 }
 
 .header-search img{
@@ -70,6 +70,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -150,76 +152,139 @@ main{
 
 .recommended{
     width: 100%;
-    height: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 70px;
 }
 
 .recommended-card{
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
 }
 
 .recommended-product-card{
-    width: 33%;
-    height: 60%;
-
-    background-color: #FFFFFF;
-    border-radius: 15px;
+    width: 42%;
+    height: 300px;
+    border-radius: 13px;
     overflow: hidden;
+    border: solid 0.5px rgb(240, 234, 234);
+    margin-bottom: 2%;
 
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 50% 30% 20%;
+    color: rgb(68, 66, 66);
 }
 
-.recommended-product-card-img{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
+.recommended-product-card-header{
+   
     width: 100%;
-    background-image: url('src/food1.png');
+    height: 50%;
     background-size: cover;
     background-position: center;
-    background-color: blue;
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
-.recommended-product-card-like{
-    grid-column-start: 2;
-    width: 25px;
-    grid-row-start: 1;
+.recommended-product-card-header svg{
+    fill : #f5b1c2;
+    width: 10%;
+    padding: 7%;
+    max-width: 23px;
 }
-.recommended-product-info{
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-column-end: 3;
 
+.recommended-product-card-info{
+    padding: 3% 7%;
+    height: 30%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 5%;
 }
+
 .recommended-product-title{
-    
-} 
+    font-size: 80%;
+}
+.recommended-product-card-classification{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-.recommended-product-classification{
-    
-    width: 50%;
+    gap: 10px;
+    width: 100%;
+    height: 28%;
+}
+.recommended-product-card-classification img{
+    width: 70%;
+    max-width: 103px;    
 }
 
-.recommended-product-price{
-   
+.recommended-product-card-classification p{
+    font-size: 12px;
 }
 
-.recommended-product-button{
+.recommended-product-card-price{
+    font-size: 13px;
+}
+
+.recommended-product-card-button{
     grid-column-start: 1;
     grid-row-start: 3;
     grid-column-end: 3;
 
     width: 90%;
-    height: 80%;
+    height: 10%;
     background-color: #FFD600;
     border: none;
     border-radius: 15px;
+    margin-left: 5%;
+    font-weight: 700;
+}
 
+.img-food-1{
+    background-image: url('src/food1.png');
+}
+
+.img-food-2{
+    background-image: url('src/food2.png');
+}
+.img-food-3{
+    background-image: url('src/food3.png');
+}
+
+.img-food-4{
+    background-image: url('src/food4.png');
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+
+    box-shadow: 4px 0px 15px -12px rgba(0,0,0,0.75);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-icon{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    gap: 2px;
+
+}
+.footer-icon img {
+    width: 25%;
+    
 }
 
 
