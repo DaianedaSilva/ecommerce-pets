@@ -13,13 +13,17 @@ body {
 .header-title {
     font-weight: 400;
 }
+
+.header-icon {
+    font-size: 20px;
+}
  
 main {
     width: 100%;
 }
 
 .product {
-    height: 60%;
+    height: 55%;
 }
 
 .product-image {
@@ -132,6 +136,7 @@ main {
 .more-information-content {
     color: var(--font-primary);
     margin: 15px;
+    min-height: 420px;
 }
 
 .footer {
@@ -200,9 +205,8 @@ main {
         margin-top: 50px;
     }
 
-    /* .more-information {
-        background-color: var(--white);
-        margin: 0;
-    } */
+    .more-information-content {
+        min-height: 0;
+    }
 
 }
