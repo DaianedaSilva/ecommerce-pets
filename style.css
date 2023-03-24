@@ -132,7 +132,7 @@ main{
 }
 
 
-.row-title{
+.recommended-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +145,7 @@ main{
 }
 
 
-.row-title .subtitle {
+.recommended-title .subtitle {
     font-size: 12px;
     opacity: 70%;
 }
@@ -284,9 +284,7 @@ footer{
 }
 .footer-icon img {
     width: 25%;
-    
 }
-
 
 /** Desktop Layout**/
 @media (min-width: 768px){
