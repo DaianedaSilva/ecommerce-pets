@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="../../logic.js"></script>
+
     <title>Pet's Chow</title>
 </head>
 <body>
@@ -28,13 +30,16 @@
                     <img class="product-info-review-stars" src="../../src/starts.png">
                     <p class="product-info-review-quantity">23 reviews</p>
                 </div>
-                <p class="product-info-price price">$ 16.00</p>
+                <div class="product-info-price price">
+                    <p>$</p>
+                    <p id="product-price">16.00</p>
+                </div>
                 <div class="product-info-quantity">
                     <p class="product-info-quantity-title">Quantity</p>
                     <div class="product-info-quantity-buttons">
-                        <button>-</button>
-                        <p id="product-quantity">2</p>
-                        <button>+</button>
+                        <button onclick=subtract_quantity()>-</button>
+                        <p id="product-quantity">0</p>
+                        <button onclick=add_quantity()>+</button>
                     </div>
 
                 </div>
@@ -61,7 +66,10 @@
     </main>
 
     <footer class="footer">
-        <p class="footer-price price">$ 32,00</p>
+        <div class="footer-price price">
+            <p>$</p>
+            <p id="shop-price">0.00</p>
+        </div>
         <button class="footer-button">
             <p>Add to card</p>
             <p>+</p>
