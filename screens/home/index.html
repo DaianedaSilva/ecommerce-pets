@@ -6,13 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../common.css">
+    <script type="text/javascript" src="../../logic.js"></script>
     <title>Pet's Chow</title>
 </head>
 <body>
     <header>
+        <div class="header-desktop"> 
+            <div class="header-desktop-title">
+                <h1>Pet's Chow</h1>
+                
+            </div>
+
+
+            <div class="header-desktop-icon"> <img src="../../src/home.png">Shop </div> 
+
+            <div  class="header-desktop-icon">
+                <img src="../../src/paw.png"> Pets
+            </div>
+    
+            <div  class="header-desktop-icon">
+                <img src="../../src/heart-icon.png"> Liked
+            </div  class="header-desktop-icon">
+            
+            <div  class="header-desktop-icon">
+                <img src="../../src/shopping-bag.png"> Shop
+            </div>
+    
+            
+            <div  class="header-desktop-icon">
+                <img src="../../src/user.png"> User
+            </div>
+
+            <div  class="header-desktop-icon">
+            <img src="../../src/shopping-cart-black.png">
+            </div>
+
+
+        </div>
+
         <div class="header-title">
             <h1>Pet's Chow</h1>
-            <img src="src/shopping-cart.svg">
+            <img src="../../src/shopping-cart.svg">
         </div>
 
         <div class="header-search">
@@ -23,13 +58,14 @@
 
     <main>
         <section class="banner">
-            <img src="src/banner1.png">
+            <img src="../../src/banner1.png">
+            <div class="banner-desktop"></div>
             
         </section>
 
         <section class="category">
-            <div class="row-title">
-                <h2 class="title">Chosse yout category</h2>
+            <div class="category-title">
+                <h2 class="title">Chosse your category</h2>
                 <h3 class="subtitle"> All categories</h3>
             </div>
             
@@ -37,20 +73,20 @@
                 <article class="card-dog">
                     <h2 class="title">Dogs</h2>
                     <h3 class="subtitle">  12345 products</h3>
-                    <img src="src/dog.png">
+                    <img src="../../src/dog.png">
                 </article>
     
                 <article class="card-cat">
                     <h2 class="title">Cats</h2>
                     <h3 class="subtitle"> 12345 products</h3>
-                    <img src="src/cat.png">
+                    <img src="../../src/cat.png">
     
                 </article>
     
                 <article class="card-rabbit">
                     <h2 class="title">Rabbits</h2>
                     <h3 class="subtitle"> 12345 products</h3>
-                    <img src="src/rabbit.png">
+                    <img src="../../src/rabbit.png">
                 </article>
             </div>
             
@@ -68,72 +104,77 @@
                 <article class="recommended-product-card">
                     
                     <div class="recommended-product-card-header img-food-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>           
+                        <img  id="like"  src="../../src/heart.png" onclick="changeImage(this)"></img>
+
                     </div>
                        
                     <div class="recommended-product-card-info">
                         <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
                         <div class="recommended-product-card-classification" >
-                            <img src="src/starts.png">
+                            <img src="../../src/starts.png">
                             <p> (23)</p> 
                         </div>
                         <h3 class="subtitle recommended-product-card-price">$16.00</h3>
                     </div>
-                    <button class="recommended-product-card-button">Add to card </button>
+                    <button class="recommended-product-card-button"><a href="../product/product.html">Add to card </a> </button>
                     
                 </article>
 
                 <article class="recommended-product-card">
                     
                     <div class="recommended-product-card-header img-food-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>           
+
+                        <img src="../../src/heart.png" onclick="changeImage(this)"></img>
+           
                     </div>
                        
                     <div class="recommended-product-card-info">
                         <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
                         <div class="recommended-product-card-classification" >
-                            <img src="src/starts.png">
+                            <img src="../../src/starts.png">
                             <p> (23)</p> 
                         </div>
                         <h3 class="subtitle recommended-product-card-price">$16.00</h3>
                     </div>
-                    <button class="recommended-product-card-button">Add to card </button>
+                    <button class="recommended-product-card-button"><a href="../product/product.html">Add to card </a> </button>
                     
                 </article>
 
                 <article class="recommended-product-card">
                     
                     <div class="recommended-product-card-header img-food-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>           
+                        <img id="like" src="../../src/heart.png" onclick="changeImage(this)"></img>
+           
                     </div>
                        
                     <div class="recommended-product-card-info">
                         <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
                         <div class="recommended-product-card-classification" >
-                            <img src="src/starts.png">
+                            <img src="../../src/starts.png">
                             <p> (23)</p> 
                         </div>
                         <h3 class="subtitle recommended-product-card-price">$16.00</h3>
                     </div>
-                    <button class="recommended-product-card-button">Add to card </button>
+                    <button class="recommended-product-card-button"><a href="../product/product.html">Add to card </a> </button>
                     
                 </article>
 
                 <article class="recommended-product-card">
                     
                     <div class="recommended-product-card-header img-food-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>           
+                        <img id="like" src="../../src/heart.png" onclick="changeImage(this)"></img>
+           
                     </div>
                        
                     <div class="recommended-product-card-info">
                         <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
                         <div class="recommended-product-card-classification" >
-                            <img src="src/starts.png">
+                            <img src="../../src/starts.png">
                             <p> (23)</p> 
                         </div>
                         <h3 class="subtitle recommended-product-card-price">$16.00</h3>
                     </div>
-                    <button class="recommended-product-card-button">Add to card </button>
+                    <button class="recommended-product-card-button" > <a href="../product/product.html"><a href="../product/product.html">Add to card </a> </a> </button>
                     
                 </article>
 
@@ -145,28 +186,25 @@
 
     <footer>
 
-        <div class="footer-icon"> <img src="src/home.png">Shop </div> 
+        <div class="footer-icon"> <img src="../../src/home.png">Shop </div> 
 
         <div  class="footer-icon">
-            <img src="src/paw.png"> Pets
+            <img src="../../src/paw.png"> Pets
         </div>
 
         <div  class="footer-icon">
-            <img src="src/heart-icon.png"> Liked
+            <img src="../../src/heart-icon.png"> Liked
         </div  class="footer-icon">
         
         <div  class="footer-icon">
-            <img src="src/shopping-bag.png"> Shop
+            <img src="../../src/shopping-bag.png"> Shop
         </div>
 
         
         <div  class="footer-icon">
-            <img src="src/user.png"> User
+            <img src="../../src/user.png"> User
         </div>
-        
-       
-
-
+    
 
     </footer>
     
