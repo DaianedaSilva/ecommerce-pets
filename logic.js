@@ -1,3 +1,13 @@
+function changeImage(img){
+    let img_src = img.src
+
+    if( img_src.includes("filled")){
+        img.src= '../../src/heart.png'
+    }else{
+        img.src= '../../src/filled-heart.png'
+    }
+}
+
 function update_shop_price(quantity) {
     let product_price = parseInt(document.getElementById('product-price').textContent);
     let new_price = (product_price * quantity).toFixed(2);

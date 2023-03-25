@@ -6,13 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../common.css">
+    <script type="text/javascript" src="../../logic.js"></script>
     <title>Pet's Chow</title>
 </head>
 <body>
     <header>
+        <div class="header-desktop"> 
+            <div class="header-desktop-title">
+                <h1>Pet's Chow</h1>
+                
+            </div>
+
+
+            <div class="header-desktop-icon"> <img src="../../src/home.png">Shop </div> 
+
+            <div  class="header-desktop-icon">
+                <img src="../../src/paw.png"> Pets
+            </div>
+    
+            <div  class="header-desktop-icon">
+                <img src="../../src/heart-icon.png"> Liked
+            </div  class="header-desktop-icon">
+            
+            <div  class="header-desktop-icon">
+                <img src="../../src/shopping-bag.png"> Shop
+            </div>
+    
+            
+            <div  class="header-desktop-icon">
+                <img src="../../src/user.png"> User
+            </div>
+
+            <div  class="header-desktop-icon">
+            <img src="../../src/shopping-cart-black.png">
+            </div>
+
+
+        </div>
+
         <div class="header-title">
             <h1>Pet's Chow</h1>
-            <img src="src/shopping-cart.svg">
+            <img src="../../src/shopping-cart.svg">
         </div>
 
         <div class="header-search">
@@ -23,13 +58,14 @@
 
     <main>
         <section class="banner">
-            <img src="src/banner1.png">
+            <img src="../../src/banner1.png">
+            <div class="banner-desktop"></div>
             
         </section>
 
         <section class="category">
-            <div class="row-title">
-                <h2 class="title">Chosse yout category</h2>
+            <div class="category-title">
+                <h2 class="title">Chosse your category</h2>
                 <h3 class="subtitle"> All categories</h3>
             </div>
             
@@ -37,20 +73,20 @@
                 <article class="card-dog">
                     <h2 class="title">Dogs</h2>
                     <h3 class="subtitle">  12345 products</h3>
-                    <img src="src/dog.png">
+                    <img src="../../src/dog.png">
                 </article>
     
                 <article class="card-cat">
                     <h2 class="title">Cats</h2>
                     <h3 class="subtitle"> 12345 products</h3>
-                    <img src="src/cat.png">
+                    <img src="../../src/cat.png">
     
                 </article>
     
                 <article class="card-rabbit">
                     <h2 class="title">Rabbits</h2>
                     <h3 class="subtitle"> 12345 products</h3>
-                    <img src="src/rabbit.png">
+                    <img src="../../src/rabbit.png">
                 </article>
             </div>
             
@@ -58,41 +94,117 @@
 
         <section class="recommended">
 
-            <div class="row-title">
+            <div class="recommended-title">
                 <h2 class="title"> Recommended</h2>
                 <h3 class="subtitle"> See all</h3>
             </div>
 
             <div class="recommended-card">
+
                 <article class="recommended-product-card">
-                    <div class="recommended-product-card-img"></div>
-                    <!-- <img class="recommended-product-card-img" src="src/food1.png"> -->
-                    <img class="recommended-product-card-like" src="src/heart.png">
+                    
+                    <div class="recommended-product-card-header img-food-1">
+                        <img  id="like"  src="../../src/heart.png" onclick="changeImage(this)"></img>
 
-                    <div class="recommended-product-info">
-                        <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
-                        <img class="recommended-product-classification" src="src/starts.png"><p> (23)</p>
-                        <h3 class="subtitle recommended-product-price">$16.00</h3>
                     </div>
-                   
-
-                    <button class="recommended-product-button"> </button>
+                       
+                    <div class="recommended-product-card-info">
+                        <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
+                        <div class="recommended-product-card-classification" >
+                            <img src="../../src/starts.png">
+                            <p> (23)</p> 
+                        </div>
+                        <h3 class="subtitle recommended-product-card-price">$16.00</h3>
+                    </div>
+                    <button class="recommended-product-card-button"><a href="../product/product.html">Add to card </a> </button>
                     
                 </article>
-    
 
+                <article class="recommended-product-card">
+                    
+                    <div class="recommended-product-card-header img-food-2">
+
+                        <img src="../../src/heart.png" onclick="changeImage(this)"></img>
+           
+                    </div>
+                       
+                    <div class="recommended-product-card-info">
+                        <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
+                        <div class="recommended-product-card-classification" >
+                            <img src="../../src/starts.png">
+                            <p> (23)</p> 
+                        </div>
+                        <h3 class="subtitle recommended-product-card-price">$16.00</h3>
+                    </div>
+                    <button class="recommended-product-card-button"><a href="../product/product.html">Add to card </a> </button>
+                    
+                </article>
+
+                <article class="recommended-product-card">
+                    
+                    <div class="recommended-product-card-header img-food-3">
+                        <img id="like" src="../../src/heart.png" onclick="changeImage(this)"></img>
+           
+                    </div>
+                       
+                    <div class="recommended-product-card-info">
+                        <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
+                        <div class="recommended-product-card-classification" >
+                            <img src="../../src/starts.png">
+                            <p> (23)</p> 
+                        </div>
+                        <h3 class="subtitle recommended-product-card-price">$16.00</h3>
+                    </div>
+                    <button class="recommended-product-card-button"><a href="../product/product.html">Add to card </a> </button>
+                    
+                </article>
+
+                <article class="recommended-product-card">
+                    
+                    <div class="recommended-product-card-header img-food-4">
+                        <img id="like" src="../../src/heart.png" onclick="changeImage(this)"></img>
+           
+                    </div>
+                       
+                    <div class="recommended-product-card-info">
+                        <h2 class="title recommended-product-title">Adult Organic Chicken Bake with Vegetables</h2>
+                        <div class="recommended-product-card-classification" >
+                            <img src="../../src/starts.png">
+                            <p> (23)</p> 
+                        </div>
+                        <h3 class="subtitle recommended-product-card-price">$16.00</h3>
+                    </div>
+                    <button class="recommended-product-card-button" > <a href="../product/product.html"><a href="../product/product.html">Add to card </a> </a> </button>
+                    
+                </article>
 
             </div>
-
-            
-
-            
 
         </section>
 
     </main>
 
     <footer>
+
+        <div class="footer-icon"> <img src="../../src/home.png">Shop </div> 
+
+        <div  class="footer-icon">
+            <img src="../../src/paw.png"> Pets
+        </div>
+
+        <div  class="footer-icon">
+            <img src="../../src/heart-icon.png"> Liked
+        </div  class="footer-icon">
+        
+        <div  class="footer-icon">
+            <img src="../../src/shopping-bag.png"> Shop
+        </div>
+
+        
+        <div  class="footer-icon">
+            <img src="../../src/user.png"> User
+        </div>
+    
 
     </footer>
     

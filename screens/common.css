@@ -6,7 +6,15 @@
     --font-secondary: #82828a;
     --red: #f5b1c2;
     --white: #fff;
-    --yellow: #FFD600
+    --yellow: #FFD600;
+    --blue-dog: #0BCBFE;
+    --blue-cat: #37DCFF;
+    --yellow-rabbit: #FDD175;
+    --card-border: rgb(240, 234, 234);
+    --footer-shadow: rgba(0,0,0,0.75);
+    --header-shadow: rgba(0,0,0,0.09);
+    --search: #cbcbcb;
+  
 }
 
 body{
@@ -19,6 +27,6 @@ header{
     display: flex;
     align-items: center;
     
-    background-color: var(--purple);
+    
     border-radius: 0 0 18px 18px;
 }
