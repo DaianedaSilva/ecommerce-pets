@@ -120,8 +120,6 @@ main{
 .category-card .title{
     margin-bottom: 0px;
 }
-
-
 .card-dog{
     background-color: var(--blue-dog);
 }
@@ -130,12 +128,9 @@ main{
     background-color: var(--blue-cat);
 }
 
-
-
 .card-rabbit{
     background-color: var(--yellow-rabbit);
 }
-
 
 .category-title, 
 .recommended-title{
@@ -149,7 +144,6 @@ main{
     font-size: 14px;
     font-weight: 800;
 }
-
 
 .category-title .subtitle,
 .recommended-title .subtitle {
@@ -197,12 +191,12 @@ main{
     align-items: flex-start;
 }
 
-.recommended-product-card-header img{
+/* .recommended-product-card-header img{
     width: 10%;
     padding: 7%;
     max-width: 23px;
     cursor : pointer
-}
+} */
 
 .recommended-product-card-info{
     padding: 0% 7%;

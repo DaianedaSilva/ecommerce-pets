@@ -30,3 +30,10 @@ header{
     
     border-radius: 0 0 18px 18px;
 }
+
+.hearth-icon{
+    width: 10%;
+    padding: 7%;
+    max-width: 23px;
+    cursor : pointer
+}
